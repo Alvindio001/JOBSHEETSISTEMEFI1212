@@ -1,0 +1,573 @@
+<resources>
+    <string name="app_name">jobsheet sistem efi</string>
+    <string name="user">NAMA SISWA</string>
+    <string name="telp">KELAS-NO. ABSEN</string>
+    <string name="materi">
+    <b>PEMBACAAN DTC (Diagnostic Trouble Code)\n</b>
+    \n
+    Posisikan sepeda motor pada standar\n\ttengahnya.\n
+    Putar kunci kontak keposisi “ON” dan periksa MIL\n
+    \n
+        <b>CATATAN :\n</b>
+    \n
+    -	Pada saat kunci kontak di putar ke \t“ON”, MIL akan menyala selama\n \t beberapa detik, kemudian mati.\n
+    \n
+        <b>Membaca DTC dengan MIL\n</b>
+    \n
+    1. Putar kunci kontak ke posisi “OFF”.\n
+        \t\tLepaskan cover front top.\n
+        \t\tLepaskan DLC dari cover relay\n
+        \t\tstarter/pengisian\n
+        \t\tlepaskan konektor dummy dari DLC.\n
+            \n
+    2.	Hubung singkatkan terminal-\n
+        \t\t terminal DLC\n
+        \t\t Dengan menggunakan special tool.\n
+        \t\t TOOL : SCS connector,\n \t\t HUBUNGAN : Coklat\n
+        \t\t Hijau atau Hitam \n
+    \n
+    3.	Putar kunci kontak ke “ON”,\n
+        \t\t baca catat kedipan\n
+        \t\t MIL dan lihat ke indeks kode DTC.\n
+    \n
+        <b>CATATAN :\n</b>
+    \n
+    \t- Jika ada DTC di dalam ECM,\n
+       \t\t maka MIL akan mulai berkedip \n
+    \n
+        <b>Menghapus DTC\n</b>
+    \n
+     1.\t Putar kunci kontak ke “OFF”.\n
+        \t\t Lepaskan cover front top.\n
+        \t\t Lepaskan DLC dari cover relay starter\n
+        \t\t atau pengisian dan lepaskan\n
+        \t\t konektor dummy dari DLC.\n
+    \n
+     2. 	Hubung singkatkan terminal\n
+        \t\t terminal DLC dengan\n
+        \t\t menggunakan special tool.\n
+        \t\t TOOL : SCS connector,\n
+        \t\t HUBUNGAN : Coklat – Hijau atau Hitam \n
+    \n
+    3.	Putar kunci kontak ke ”ON”.\n
+    \n
+    4.	Lepaskan special tool dari DLC.\n
+       \t\t•	MIL akan menyala selama\n
+        \t\t\t kira-kira 5 detik.\n
+        \t\t\t Sementara MIL menyala,\n
+        \t\t\t hubung singkatkan lagi\n
+        \t\t\t terminal-terminal DLC dengan\n
+        \t\t\t special tool. Memori self-\n
+        \t\t\t diagnosis terhapus\n
+        \t\t\t jika MIL mati dan mulai ?\llberkedip.\n
+    \n
+        <b>CATATAN :\n</b>
+    \n
+    \t-	 \tDLC harus di-jumper\n
+        \t\t\tsementara MIL menyala.\n
+        \t\t\tJika tidak,MIL tidak akan mulai berkedip.\n\n
+
+    \t-	\tPerhatikan bahwa memori self-diagnosis\n
+        \t\t\ttidak dapat dihapus jika kunci kontak\n
+        \t\t\tdiputar ke “OFF” sebelum\n
+        \t\t\tMIL mulai berkedip.\n
+    </string>
+    <string name="tbl">
+      <b> INDEKS KODE DTC</b>
+Kedipan MIL	Keruskan fungsi	Gejala/fungsi fail-safe
+7	Sensor ECT tidak berfungsi
+•	Kontak yang longgar atau tidak baik pada konektor sensor ECT
+•	Sensor ECT atau rangkaiannya tidak berfungsi	•	Sulit dihudupkan pada suhu rendah
+•	Nilai pra-program : 82°C\n
+8	Sensor TP tidak berfungsi
+•	Kontak yang longgar atau tidak baik pada konektor sensor TP
+•	Sensor TP atau rangkaiannya tidak berfungsi	•	Akselerasi mesin tidak baik
+•	Nilai pra-program : 0°\n
+12	Injektor tidak berfungsi
+•	Kontak yang longgar atau tidak baik pada konektor injektor
+•	Injektor atau rangkaiannya tidak berfungsi	•	Mesin tidak dapat dihidupkan
+•	injektor, pompa bahan bakar dan coil pengapian mati\n
+21	Sensor O2 tidak berfungsi
+•	Kontak yang longgar atau tidak baik pada konektorsensor O2
+•	Sensor O2 atau rangkaiannya tidak berfungsi	•	Mesin bekerja dengan normal\n
+33	ECM EEPROM tidak berfungsi	•	Mesin mati terus, sulit dihidupkan, putaran stasioner kasar
+52	Sensor CKP tidak berfungsi
+•	Kontak yang longgar atau tidak baik pada konektor sensor CKP
+•	Sensor CKP atau rangkaiannya tidak berfungsi	•	Mesin tidak dapat dihidupkan\n
+
+    </string>
+    <string name="bawh_tbl">
+       <b>TROUBLESHOOTING MIL\n</b>
+        \n
+        <b>MIL KEDIPAN 7 (SENSOR ECT)\n</b>
+        \n
+        <b>CATATAN :\n</b>
+        \n
+
+-	Sebelum memulai pemeriksaan, periksalah terhadap kontak yang longgar atau tidak baik pada konektor 2P (Hitam) sensor ECT dan 33P (Hitam) ECM, kemudian periksa ulang kedipan MIL.\n\n
+
+1.	Pemeriksaan Tegangan Input Sensor ECT\n
+Putar kunci kontak ke posisi “OFF”.\n
+Lepaskan konektor 2P (Hitam) sensor ECT.\n
+Putar kunci kontak ke “ON”.\n
+Ukur tegangan pada konektor @P (Hitam)\n
+sensor ECT pada sisi kabel.\n\n
+
+HUBUNGAN : Merah muda/Putih (+) – Hijau/oranye (-)\n
+STANDARD : 4,75 – 5,25 V\n\n
+
+2.	Pemeriksaan Rangkaian Terbuka Sistem Sensor ECT\n
+Putar konci kontak ke “OFF”.\n
+Lepaskan konektor 2P (hitam ECM.\n
+Periksa kontinuitas antara konektor 2P(Hitam) sensor ECT\n
+dan konektor 33P(Hitam) ECM pada sisi kabel.\n\n
+
+TOOL : Test probe\n
+HUBUNGAN : Merah muda/Putih – Merah muda/Putih,\n
+Hijau/Oranye – Hijau/Oranye\n
+STANDARD : Kontinuitas\n\n
+
+3.	Pemeriksaan Hubungan Singkat Saluran Output Sensor ECT\n
+Periksa kontinuitas antara konektor 2P(hitam) sensor ECT pada sisi kabel massa.\n\n
+
+HUBUNGAN : Merah muda/Putih – Massa\n
+STANDARD : Tidak ada kontinuitas\n\n
+
+<b>MIL 8 KEDIPAN (SENSOR TP)\n\n</b>
+        <b>CATATAN :\n\n</b>
+
+-	Sebelum memulai pemeriksaan, periksalah terhadap kontak yang longgar atau tidak baik pada konektor 3P(hitam) sensor TP dan 33P(Hitam) ECM, kemudian periksa ulang kedipan MIL.\n\n
+-	Lakukan prosedur ini apabila throttle body diganti dengan yang baru:\n\n
+
+•	Reset sensor TP\n
+•	Inisialisasi ECM\n\n
+
+1.	Pemeriksaan Tegangan Input Daya Sensor TP\n
+Putar konci kontak ke “OFF”.\n
+Lepaskan konektor 3P(hitam) sesor TP.\n
+Putar kunci kontak ke “ON”.\n
+Ukur tegangan pada sisi kabel.\n\n
+
+HUBUNGAN : Kuning/Oranye (+) – Hijau/Oranye (-)\n
+STANDARD : 4,75 – 5,25 V\n\n
+
+2.	Pemeriksaan Rangkaian Sensor TP\n
+Putar kunci kontak ke “OFF”.\n
+Lepaskan konektor 33P(hitam) ECM.\n
+Periksa kontinuitas antara konektor 3p sensor TP dan 33P(hitam) ECM pada sisi kabel.\n\n
+
+TOOL : Test probe\n
+HUBUNGAN : Kuning/Oranye – Kuning/Oranye,\n
+Hijau/Oranye – Hijau/Oranye\n
+STANDARD : Kontinuitas\n\n
+
+3.	Pemeriksaan Sensor TP\n
+Periksa kontinuitas antara terminal-terminal\n
+konektor 3P sensor TP\n
+berikut pada sisi sensor.\n\n
+
+HUBUNGAN : A – C\n
+STANDARD : kontinuitas (sekitar 5Ω)\n
+Periksa bahwa tahanan antara terminal-terminal\n
+berikut berubah-ubah sesuai dengan gas.\n
+HUBUNGAN : B – C\n\n
+
+4.	Pemeriksaan Rangkaian Saluran Sinyal Sensor TP\n
+Putar kunci kontak ke “OFF”.\n
+Lepaskan konektor 33P(Hitam) ECM\n
+Periksa kontinuitas antara konektor 3P(Hitam) sensor TP\n
+dan konektor 33p(Hitam) ECM pada sisi kabel.\n
+Periksa kontinuitas antara konektor\n
+3P(Hitam) sensor TP dan massa.\n\n
+
+TOOL : Test probe\n
+HUBUNGAN : Kuning/Biru – Kuning/Biru\n
+STANDARD : Kontinuitas\n
+HUBUNGAN : Kuning/Biru – Massa\n
+STANDARD : Tidak ada Kontinuitas\n\n
+
+<b>MIL 12 KEDIPAN (INJECTOR)\n\n</b>
+
+<b>CATATAN :\n\n</b>
+
+-	Sebelum memulai pemeriksaan, periksalah terhadap kontak yang longgar atau tidak baik pada konektor 2P injector dan 33P(Hitam) ECM dan periksa ulang kedipan MIL.\n\n
+
+1.	Pemeriksaan Tegangan Input Injector\n
+Putar kunci kontak ke “OFF”\n
+Lepaskan konektor 2P(Hitam) injector.\n
+Putar kunci kontak ke “ON”.\n
+Ukur tegangan antara konektor 2P(Hitam) injector pada sisi kabel dan massa.\n\n
+
+HUBUNGAN : Hitam/Putih (+) – Massa (-)\n
+STANDARD : Di atas (tegangan batrai – 1,1 V)\n\n
+
+2.	Pemeriksaan Tahanan Injector\n
+Ukur tahanan terminal-terminal konektor 2P sisi injector.\n\n
+
+STANDARD : 11 – 13 Ω (pada 24°C)\n\n
+
+3.	Pemeriksaan Rangkaian Saluran Sinyal Injector\n
+Putar kunci kontak ke “OFF”.\n
+Lepaskan konektor 33P (Hitam) ECM.\n
+Periksa kontinuitas antara konektor (Hitam) 33P ECM dan 2P injector pada sisi kabel.\n\n
+
+TOOL : Test probe\n
+HUBUNGAN : Merah muda/Biru – Merah muda/Biru\n
+STANDARD : Kontinuitas\n\n
+
+4.	Pemeriksaan Hubungan Singkat Saluran Sinyal\n
+Periksa terhadap kontinuitas antara konektor 2P (Hitam) injector pada sisi kabel dan massa.\n\n
+
+HUBUNGAN : Merah muda/Biru – Massa\n\n
+
+<b>MIL 21 KEDIPAN (SENSOR O2)\n\n</b>
+
+<b>CATATAN :\n\n</b>
+
+-	Sebelum memulai pemeriksaan, periksa terhadap kontak yang longgar atau tidak baik pada terminal sensor O2, konektor 1P(hitam) sensor O2 dan konektor 33P(Hitam) ECM, periksa ulang kedipan MIL.\n\n
+
+1.	Pemeriksaan Hubungan Soingkat sensor O2\n
+Putar kunci kontak ke “OFF”.\n
+Lepaskan konektor 33P(hitam ECM dan terminal sensor O2.\n
+Periksa kontinuitas antara terminal sensor O2 dan massa.\n\n
+
+HUBUNGAN : Terminal sensor O2 – Massa\n\n
+
+2.	Pemeriksaan Kontinuitas Rangkaian Sensor O2\n
+Periksa kontinuitas antara terminal sensor O2 dan konektor 33P(Hitam) ECM sisi kabel.\n\n
+
+TOOL : Test probe\n
+HUBUNGAN : Terminal sensor O2 – Hitam/Oranye\n\n
+
+3.	Pemeriksaan Sensor O2\n
+Ganti dengan sensor O2 dengan yang masih\n
+dalam keadaan baik.Lakukan prosedur inisialisasi ECM\n
+Hapus DTC.\n
+Hidupkan mesin, panaskan mesin sampai suhu kerja normal.\n
+Tes-ride sepeda motor dan periksa ulang kedipan MIL\n
+MIL 33 KEDIPAN (EEPROM)\n\n
+
+1.	Periksa Ulang DTC\n
+Hapus DTC\n
+Putar kunci kontak ke “ON”\n
+Periksa ulang ECM EEPROM\n\n
+
+<b>MIL 52 KEDIPAN (SENSOR CKP)\n\n</b>
+    <b>CATATAN :\n\n</b>
+
+-	Sebelum memulai pemeriksaan, periksalah terhadap kontak yang longgar atau tidak baik pada konektor 6P sensor CKP dan 33P (hitam ECM dan periksa ulang kedipan MIL.\n\n
+
+1.	Pemeriksaan Hubungan Singkat Saluran Sensor CKP\n
+Putar kunci kontak ke “OFF”.\n
+Lepaskan konektor 6P(Hitam) sensor CKP.\n
+Periksa kontinuitas antara terminal konektor 6P(Hitam)sensor CKP dan massa.\n\n
+
+HUBUNGAN : Putih/Merah – Massa, Putih/Biru – Massa, Putih/Hitam – Massa, Biru/Kuning – Massa, Coklat/Hitam – Massa, Biru/Hijau – Massa\n
+STANDARD : Tidak ada kontinuitas\n\n
+
+2.	Pemeriksaan Rangkaisan Terbuka Saluran Sensor CKP\n
+Lepaskan konektor 33P (Hitam) ECM.\n
+Periksa kontinuitas antara terminal-terminal konektor 33P ECM dan 6P(Hitam) CKP pada sisi kabel.\n\n
+
+TOOL : Test probe\n
+HUBUNGAN : Putih/Merah – Putih/Merah, Putih/Biru – Putih/Biru, Putih/Hitam – Putih/Hitam, Biru/Kuning – Biru/Kuning, Coklat/Hitam – Coklat/Hitam, Biru/Hijau – Biru/Hijau\n
+STANDARD : Kontinuitas\n\n
+
+3.	Pemeriksaan Sensor CKP\n
+Ganti sensor CKP dengan yang masih dalam keadaan baik.\n
+Hapus DTC.\n
+Hidupkan mesin dan panaskan.\n
+Test-ride sepeda motor dan periksa kedipan MIL.\n\n
+
+THROUBLESHOOTING RANGKAIAN MIL\n
+Sewaktu kunci kontak diputar ke “ON”, MIL tidak menyala\n
+Jika mesin dapat dihidupkan tetapi MIL tidak menyala sewahtu kunci kontak diputar ke “ON”, periksalah sebagai berikut:\n
+Putar kunci kontak ke “OFF”\n
+Lepaskan konektor 33P(Hitam) ECM.\n
+Hubungkan terminal kabel Putih/Biru sisi kabel body konektor 33P(Hitam ECM ke massa dengan kabel jumper.\n\n
+
+TOOL : Test probe\n
+HUBUNGAN : Putih/Biru – Massa\n\n
+
+Putar kunci kontak ke “ON”, MIL seharusnya menyala\n
+•	Jika MIL menyala, ganti ECM dengan yang masih dalam keadaan baik dan periksa kembali penunjukan MIL.\n\n
+
+•	Jika MIL tidak menyala, periksa terhadap rangkaian terbuka pada kabel Putih/Biru antara MIL dan konektor 33P(hitam) ECM.\n\n
+
+Jika kabel tidak ada masalah, ganti MIL.\n
+Sewaktu kunci kontak diputar ke”ON”, MIL tidak mati setelah beberapa detik (Masih Hidup)\n
+Putar kunci kontak ke “OFF”.\n
+Lepaskan konektor 33P(hitam) ECM.\n\n
+
+Putar kunci kontak ke “ON”, MIL seharusnya menyala.\n
+•	Jika MIL menyala, periksa terhadap hubungan singkat pada kabel Putih/Biru antara konektor meter kombinasi dan 33P(hitam) ECM.\n
+Jika kabel Putih/Biru OK(bagus), ganti ECM dengan yang masih dalam keadaan baik dan periksa ulang.\n\n
+
+•	Jika MIL mati, periksa sebagai berikut :\n
+Periksa kontinuitas antara konektor 33P (hitam) ECM pada sisi kabel dan massa.\n\n
+
+TOOL : Test probe\n
+HUBUNGAN : Coklat – Massa\n
+STANDARD : tidak ada kontinuitas\n
+•	Jika ada kontinuitas, periksa terhadap hubungan singkat pada kabel Coklat antara DLC dan ECM\n
+•	Jika tidak ada kontinuitas, ganti ECM dengan yang masih dalam keadaan baik dan periksa ulang.\n\n
+
+SETTING KETINGGIAN MODE 1,2,3,4\n\n
+
+PROSEDUR ALTITUDE SETTING ( SETTING KETINGGIAN)\n\n
+
+Pilih mode yang sesuai dengan ketinggian daerah setempat:\n\n
+
+MODE 1	: Dari titik mula altitude tinggi ( ketinggian diatas permukaan laut melebihi 2000m ke altitude rendah (ketinggian diatas permukaan laut kurang dari 2000m)\n\n
+
+MODE 2	: Ketinggian 2.000 – 2.500 m diatas permukaan laut\n\n
+
+MODE 3	: Ketinggian 2.500 – 3.500 m diatas permukaan laut\n\n
+
+MODE 4	: Ketinggian 3.500 m atau lebih tinggi di atas permukaan laut\n\n
+
+A.	Hal-hal yang perlu diperhatikan :\n
+1.	Pastikan ECM tidak menyimpan kode kegagalan\n
+2.	Jika kode kegagalan tersimpan dalam ECM, maka proses altitude setting tidak dapat dilakukan\n
+3.	Setting ketinggian akan gagal apabila proses setting ketinggian, mesin dalam keadaan hidup.\n\n
+
+B.	Prosedur altitude setting\n\n
+
+Mode 1 :\n
+2.	Lepaskan front body cover, sehingga DLC kelihatan\n
+3.	Lepasakan penutup DLC (DLC Cap) dan pasang DLC short connector\n
+4.	Buka handle gas (throttle sepenuhnya dan tahan\n
+5.	Putar ignition switch ke posisi “ON” (MIL seharusnya menyala dan kemudian berkedip dengan cepat)\n
+6.	Dalam waktu 5 detik setelah kedipan cepat dimulai, tutup handle gas (throttle) dan tahan selama lebih dari 3 detik\n\n
+
+CATATAN :\n
+-	Jika MIL tidak mulai berkedip dengan cepat, putar kunci kontak ke posisi “OFF” dan coba lagi\n
+-	Jika anda tidak dapat melakukan setting ketinggian, pastikan kode kegagalan benar-benar tidak tersimpan di ECM\n
+-	Jika kode kerusakan tidak tersimpan akan tetapi anda masih tidak dapat melakukan setting ketinggian, ganti ECM yang masih dalam keadaan baik dan coba lagi\n\n
+
+7.	Jika proses setting ketinggian MODE 1 berhasil maka MIL akan berkedip-kedip dengan kedipan pendek berulang. Kemudian putar kunci kontak ke posisi “OFF”\n
+{setelah proses setting altitude berhasil, langkah selanjutnya adalah mengatur putaran stasioner : 1.400 ±100 Rpm atau 1.700 ±100 Rpm}
+\n\n
+
+<b>MODE 2-4 :\n\n</b>
+
+<b>CATATAN :\n\n</b>
+
+-	MODE 2 : hentakan handle gas 1 kali\n\n
+
+-	MODE 3 : hentakan handle gas 2 kali\n\n
+
+-	MODE 4 : hentakan handle gas 3 kali\n\n
+
+1.	Putar kunci kontak ke posisi “OFF”\n
+2.	Lepaskan front body cover, sehingga DLC kelihatan\n
+3.	Lepasakan penutup DLC (DLC cap) dan pasang DLC short connector\n
+4.	Buka handle gas (throttle) sepenuhnya dan tahan\n
+5.	Putar kunci kuntak ke posisi “ON”\n
+6.	Dalam waktu 5 detik setelah kedipan cepat dimulai, hentakan handle gas (throtle) dengan cepat tutup selama 5 detik, kemudian buka selama 0,5 detik, kemudian tutup handle gas dan tahan selama lEbih dari 3 detik.\n\n
+
+<b>CATATAN :\n\n</b>
+
+-	Jika MIL tidak mulai berkedip dengan cepat, putar kunci kontak ke posisi “OFF” dan coba lagi\n\n
+
+-	Jika anda tidak dapat melakukan setting ketinggian, pastikan kode kegagalan benar-benar tidak tersimpan di ECM\n\n
+
+-	Jika kode kerusakan tidak tersimpan akan tetapi anda masih tidak dapat melakukan setting ketinggian, ganti ECM yang masih dalam keadaan baik dan coba lagi\n\n
+
+PEMERIKSAAN BAHAN BAKAR\n\n
+
+PROSEDUR MEMBEBASKAN TEKANAN BAHAN BAKAR\n\n
+
+Sebelum melepaskan selang pengaliran bahan bakar, bebaskan tekanan dari sistem dengan mengikuti prosedur berikut:\n
+1.	Pastikan kunci kontak pada posisi “OFF”\n
+2.	Lepaskan cover body\n
+3.	Lepaskan fuel tray\n
+4.	Lepaskan konektor 5P (putih) pompa bahan bakar\n
+5.	Hidupkan mesin dan biarkan berputar stasioner sampai mesin mati sendiri\n
+6.	Putar konci kontak ke posisi “OFF”\n
+7.	Lepaskan kabel negatif (-) baterai\n\n
+
+NORMALISASI TEKANAN BAHAN BAKAR\n
+1.	Hubungkan konektor 5P (putih) pompa bahan bakar\n
+2.	Pasang fuel tray dan kencangkan baut\n
+3.	Hubungkan kabel negatif (-) baterai\n
+4.	Putar kunci kontak ke posisi “ON”\n
+(pompa bahan bakar akan bekerja selama 2 setik dan tekanan bahan bakar akan naik, ulangi 3x)\n
+5.	Putar kuncikontak ke posisi “OFF”\n
+6.	Periksa kembali dan pastikan tidak ada kebocoran pada sistem bahan bakar\n\n
+
+Prosedur Tes Tekanan Bahan Bakar\n
+1.	Lepaskan selang dari sisi pompa bahan bakar\n
+2.	Pasang fuel preesure gauge, attachment-attachment dan manifold.\n\n
+
+TOOL : Fuel preesure gauge, Pressure gauge manifold, Hose attachment, attachment joint\n\n
+
+3.	Untuk sementara sambungkan kabel negatif (-) ke baterai dan konektor 5P (Putih) pompa bahan bakar.\n
+4.	Bacalah tekanan bahan bakar.\n\n
+
+STANDARD : 294 kPa\n
+•	Jika tekanan bakan bakar lebih tinggi dari yang di spesifikasikan, ganti assy pompa bahan bakar\n
+•	Jika tekanan bahan bakar lebih rendah dari spesifikasi, periksa sebagai berikut :\n\n
+
+-	Kebocoran saluran bahan bakar\n
+-	Unit pompa bahan bakar\n
+-	Saringan bahan bakar tersumbat\n\n
+
+5.	Setelah pemeriksaan, bebaskan tekanan bahan bakar.\n
+6.	Lepaskan fuel pressure gauge, attachment dan manifold dari pompa bahan bakar.\n
+7.	Pasang selang pada sisi pompa bahan bakar\n
+8.	Normalisasikan tekanan bahan bakar\n
+9.	Periksa kembali pastikan tidak ada kebocoran pada sistem pemasokan bahan bakar.\n\n
+
+Prosedur Pemeriksaan Anliran Bahan Bakar\n
+1.	Pastikan kunci kontak “OFF”\n
+2.	Lepaskan selang dari sisi injektor\n
+3.	Lepaskan baut pengikat selang\n
+4.	Tempatkan ujung selang kedalam gelas ukur\n
+5.	Untuk sementara sambungkan negatif (-) batrai dan konektor 5P (Putih) pompa bahan bakar.\n
+6.	Putar kunci kontak ke posisi “ON” (pompa bahan bakar bekerja selama 2 detik) ulangi sebanyak 5X\n
+Jumlah aliran bahan bakar : minimum 98 cm³/10detik\n\n
+
+•	Jika aliran bahan bakar kurang dari uang dispesifikasikan, periksa berikut ini:\n\n
+
+-	Selang bahan bakar tersumbat\n
+-	 Unit pompa bahan bakar\n
+-	Saringan bahan bakar tersumbat\n\n
+
+7.	Ukur jumlah bahan bakar yang mengalir\n
+8.	Pasang kembali selang bahan bakar disisi injektor\n
+9.	Normalisasikan tekanan bahan bakar\n
+10.	Periksa pastikan tidak ada kebocoran pada sistem bahan bakar\n\n
+
+Pemeriksaan Sistem pompa bahan bakar\n
+Putar kunci kontak ke “ON” dan pastikan pompa bahan bakar bekerja selama 2 detik.\n\n
+
+Jika pompa bahan bakar tidak bekerja maka periksalah sebagai berikut:\n
+1.	Putar kunci kontak ke “OFF”\n
+2.	Lepaskan cover body\n
+3.	Lepaskan baut dan fuel tray\n
+4.	Lepaskan konektor 5P(Putih) pompa bahan bakar\n
+5.	Putar kunci kontak ke “ON” dan ukur tegangan pada terminal-terminal konektor 5P(Putih) pompa bahan bakar sisi kabel body.\n\n
+
+HUBUNGAN : Hitam/Putih (+) – Coklat/Kuning (-)\n
+STANDARD : Di atas (tegangan baterai - 1,1 V)\n\n
+
+6.	Seharusnya ada tegangan beberapa detik\n
+7.	Jika ada tegangan standard, ganti unit pompa bahan bakar\n
+8.	Jika tidak ada tegangan standard, periksalah sebagai berikut:\n
+•	Sekring utama 25A\n
+•	Sekting tambahan 10A(IGN, INJ, FUEL PUMP)\n
+•	Kunci kontak\n
+•	Rangkaian terbuka pada kabel Hitam/Putih antara pompa bahan bakar dan kontak sekring\n
+•	Rangkaian terbuka pada kabel Coklat/Kuning antara pompa bahan bakar dan ECM\n
+•	Saluran daya/massa ECM\n
+
+    </string>
+
+
+    <string name="langkah1">
+    1.	Putar kunci kontak ke posisi “OFF”.\n\n
+        Lepaskan cover front top.\n\n
+Lepaskan DLC dari cover relay starter/pengisian dan lepaskan konektor dummy dari DLC.\n\n
+2.	Hubung singkatkan terminal-terminal DLC dengan menggunakan special tool.\n\n
+TOOL : SCS connector, HUBUNGAN : Coklat -Hijau/Hitam\n\n
+3.	Putar kunci kontak ke “ON”, baca catat kedipan MIL dan lihat ke indeks kode DTC.\n\n
+        </string>
+    <string name="langkah2">
+    1.	Putar kunci kontak ke “OFF”.\n\n
+        Lepaskan cover front top.\n\n
+        Lepaskan DLC dari cover relay starter/pengisian dan lepaskan konektor dummy dari DLC.\n\n
+    2.	Hubung singkatkan terminal terminal DLC dengan menggunakan special tool.\n\n
+        TOOL : SCS connector, HUBUNGAN : Coklat – Hijau/Hitam\n\n
+    3.	Putar kunci kontak ke ”ON”.\n\n
+    4.	Lepaskan special tool dari DLC.\n\n
+        •	MIL akan menyala selama kira-kira 5 detik. Sementara MIL menyala, \n\n
+        hubung singkatkan lagi terminal-terminal DLC dengan special tool.\n\n
+        Memori self- diagnosis terhapus jika MIL mati dan mulai berkedip.\n\n
+        </string>
+    <string name="langkah3">
+        1.	Putar kunci kontak ke posisi “OFF”\n\n
+        2.	Lepaskan penutup DLC dan pasang DLC connector\n\n
+        3.	Lepaskan konektor sensor EOT\n\n
+        4.	Hubungkan terminal-terminal konektor sisi kabel dengan kabel jumper (jumper line)\n\n
+        {hubungkan : kabel warna kuning/biru -hijau/jingga}\n\n
+        5.	Putar kunci kontak ke posisi “ON”\n\n
+        6.	Lepaskan jumper line dari konektor sensor EOT. MIL berkedip selama 10 detik (pola penerimaan reset) putar kunci kontak ke posisi “OFF”\n\n
+        7.	Pasang kembali konektor sensor EOT\n\n
+        8.	Lepaskan DLC short connector, tutup kembali DLC short connector dengan penutup DLC\n\n
+        9.	Hidupkan mesin pada putaran stasioner selama kurang lebih 20 menit\n\n
+    </string>
+    <string name="langkah4">
+        1.	Putar kunci kontak ke posisi “OFF”\n\n
+        2.	Lepaskan cover front top, sehingga DLC kelihatan\n\n
+        3.	Lepasakan DLC dari cover relay starter/pengisian dan lepaskan konektor dummy dari DLC.\n\n
+        4.	Hubung singkatkan DLC dengan special tool.\n\n
+        TOOL : SCS connector\n\n
+        HUBUNGAN : Coklat – Hijau/Hitam\n\n
+        5.	Buka handle gas sepenuhnya dan tahan.\n\n
+        6.	Putar ignition switch ke posisi “ON”\n\n
+        •	MIL seharusnya menyala dan kemudian berkedip dengan cepat\n\n
+        Mode 1 :\n\n
+        -	Dalam waktu 5 detik setelah kedipan cepat dimulai, tutup handle gas dan tahan selama lebih dari 3 detik\n\n
+        Mode 2,3,4 :\n\n
+        -	Dalam waktu 5 detik setelah kedipan cepat dimulai, hentakkan handle gas dengan cepat (tutup selama 0,5 detik/buka selama 0,5 detik) sejumlah spesifikasi, kemudian tutup dan tahan selama lebih dari 3 detik.\n\n
+        •	Mode 2	: Hentakkan handle gas 1 kali\n\n
+        •	Mode 3	: Hentakkan handle gas 2 kali\n\n
+        •	Mode 4	: Hentakkan handle gas 3 kali\n\n
+        7.	MIL akan mengulang kedipan-kedipan pendek sejumlah mode yang dipilih.\n\n
+        8.	Jika pola berhasil yang diinginkan terlihat, putar kunci kontak ke “OFF”\n\n
+        9.	Lepaskan special tool dari DLC.\n\n
+        10.	Pasang konektor dummy pada DLC dan pasang ke relay starter / pengisian.\n
+        11.	Pasang cover front top\n\n
+    </string>
+    <string name="langkah5">
+        1.	Lepaskan selang dari sisi pompa bahan bakar\n\n
+        2.	Pasang fuel preesure gauge, attachment-attachment dan manifold.\n\n
+        TOOL : Fuel preesure gauge, Pressure gauge manifold, Hose attachment, attachment joint\n\n
+        3.	Untuk sementara sambungkan kabel negatif (-) ke baterai dan konektor 5P (Putih) pompa bahan bakar.\n\n
+        4.	Bacalah tekanan bahan bakar.\n\n
+        5.	Setelah pemeriksaan, bebaskan tekanan bahan bakar.\n\n
+        6.	Lepaskan fuel pressure gauge, attachment dan manifold dari pompa bahan bakar.\n\n
+        7.	Pasang selang pada sisi pompa bahan bakar\n\n
+        8.	Normalisasikan tekanan bahan bakar\n\n
+        9.	Periksa kembali pastikan tidak ada kebocoran pada sistem pemasokan bahan bakar.\n\n
+    </string>
+    <string name="langkah6">
+        1.	Pastikan kunci kontak “OFF”\n\n
+        2.	Lepaskan selang dari sisi injektor\n\n
+        3.	Lepaskan baut pengikat selang\n\n
+        4.	Tempatkan ujung selang kedalam gelas ukur\n\n
+        5.	Untuk sementara sambungkan negatif (-) batrai dan konektor 5P (Putih) pompa bahan bakar.\n\n
+        6.	Putar kunci kontak ke posisi “ON” (pompa bahan bakar bekerja selama 2 detik) ulangi sebanyak 5X\n\n
+        7.	Ukur jumlah bahan bakar yang mengalir\n\n
+        8.	Pasang kembali selang bahan bakar disisi injektor \n\n
+        9.	Normalisasikan tekanan bahan bakar\n\n
+        10.	Periksa pastikan tidak ada kebocoran pada sistem bahan bakar\n\n
+
+    </string>
+    <string name="tujuan">
+        1-	Mengetahui komponen-komponen sistem EFI pada sepeda motor honda\n\n
+        2-	Mampu melakukan pengukuran tekanan bahan bakar\n\n
+        3-	Mampu menbaca Throubleshooting MIL\n\n
+        4-	Mampu memeriksa histori kode kegagalan dalam ECM\n\n
+        5-	Mampu menghapus kode kegagalan dalam ECM\n\n
+        6-	Mampu melakukan reset TP sensor dan ECM\n\n
+        7-	Mampu melakukan Altitude Setting (seting ketinggian)\n\n
+    </string>
+    <string name="keselamatan">
+        1-	Memakai wearpack\n\n
+        2-	Memakai sepatu safety\n\n
+        3-	Melakukan praktik sesuai prosedur\n\\n
+        4-	Hati-hati dalam melaksanakan praktik\n\n
+        5-	Menggunakan alat dengan baik dan benar\n\n
+        6-	Jauhkan dari barang yang mudah terbakar\n\n
+    </string>
+    <string name="alat">
+        1-	Sepeda motor EFI (Honda Vario 125 FI)\n\n
+        2-	Tool set\n\n
+        3-	Pengukur tekanan bahan bakar (Fuel pressure gauge, Pressure gauge manifold, Hose attachment, Attachment joint)\n\n
+        4-	SCS connector\n\n
+        5-	Gelas ukur\n\n
+        6-	Test probe\n\n
+    </string>
+</resources>
